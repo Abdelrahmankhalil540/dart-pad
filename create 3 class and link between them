@@ -1,0 +1,42 @@
+void main() {
+  
+  
+  
+  User username = User(name:"abdo",age:21,city:"desouk",student:Student(year:2030,grade:50),teach:Teach(subject:"ddddddd",level:10));
+  print(username.student?.year);
+  
+//   Student studentname = Student(year:2020,grade:100);
+//   print(studentname.grade);
+  
+//   Teach teachname = Teach(subject: "cccccc",level: 50);
+//   print(teachname.level);
+}
+
+
+class User{
+  
+  final String? name;
+  final int? age ;
+  final String? city;
+  final Student? student;
+  final Teach? teach;
+  
+  User({this.name,this.age,this.city,this.student,this.teach,});
+  
+}
+
+
+class Student{
+  final int? year ;
+  final int? grade ;
+  
+  Student({this.year,this.grade});
+}
+
+
+class Teach{
+  final String? subject ;
+  final int? level ;
+  
+  Teach({this.subject,this.level});
+}
